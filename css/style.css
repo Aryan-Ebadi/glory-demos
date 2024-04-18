@@ -1,8 +1,7 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanwebregularfanum.eot");
-  src: url("../fonts/iranyekanwebregularfanum.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/iranyekanwebregularfanum.eot?#iefix") format("embedded-opentype"),
     url("../fonts/iranyekanwebregularfanum.woff") format("woff"),
     url("../fonts/iranyekanwebregularfanum.woff2") format("woff2"),
     url("../fonts/iranyekanwebregularfanum.ttf") format("truetype");
@@ -12,8 +11,7 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanweblightfanum.eot");
-  src: url("../fonts/iranyekanweblightfanum.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/iranyekanweblightfanum.eot?#iefix") format("embedded-opentype"),
     url("../fonts/iranyekanweblightfanum.woff") format("woff"),
     url("../fonts/iranyekanweblightfanum.woff2") format("woff2"),
     url("../fonts/iranyekanweblightfanum.ttf") format("truetype");
@@ -23,8 +21,7 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanwebboldfanum.eot");
-  src: url("../fonts/iranyekanwebboldfanum.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/iranyekanwebboldfanum.eot?#iefix") format("embedded-opentype"),
     url("../fonts/iranyekanwebboldfanum.woff") format("woff"),
     url("../fonts/iranyekanwebboldfanum.woff2") format("woff2"),
     url("../fonts/iranyekanwebboldfanum.ttf") format("truetype");
@@ -34,8 +31,7 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanwebextraboldfanum.eot");
-  src: url("../fonts/iranyekanwebextraboldfanum.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/iranyekanwebextraboldfanum.eot?#iefix") format("embedded-opentype"),
     url("../fonts/iranyekanwebextraboldfanum.woff") format("woff"),
     url("../fonts/iranyekanwebextraboldfanum.woff2") format("woff2"),
     url("../fonts/iranyekanwebextraboldfanum.ttf") format("truetype");
@@ -45,8 +41,7 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanwebextrablackfanum.eot");
-  src: url("../fonts/iranyekanwebextrablackfanum.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/iranyekanwebextrablackfanum.eot?#iefix") format("embedded-opentype"),
     url("../fonts/iranyekanwebextrablackfanum.woff") format("woff"),
     url("../fonts/iranyekanwebextrablackfanum.woff2") format("woff2"),
     url("../fonts/iranyekanwebextrablackfanum.ttf") format("truetype");
@@ -56,8 +51,7 @@
 @font-face {
   font-family: "Freight";
   src: url("../fonts/FreightSansProBold-Regular.eot");
-  src: url("../fonts/FreightSansProBold-Regular.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/FreightSansProBold-Regular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/FreightSansProBold-Regular.woff") format("woff"),
     url("../fonts/FreightSansProBold-Regular.woff2") format("woff2"),
     url("../fonts/FreightSansProBold-Regular.ttf") format("truetype");
@@ -96,14 +90,16 @@ ul {
 }
 
 .head-logo img {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
 }
+
 .head-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -116,40 +112,65 @@ header {
   z-index: 1;
   background-color: white;
   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  box-shadow: rgb(0 0 0 / 13%) 0px 2px 14px 0px;
+  border-bottom: 1px solid #00000026;
 }
+
 .head-contactUs {
   background: #dc0001;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.4rem 1.6rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgb(0 0 0 / 40%) 0px 2px 11px -2px;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
+
 .head-container {
-  width: 90%;
+  width: 100%;
+  padding: 0 2rem;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.head-title h2 {
-  font-size: 1.2rem;
+
+.head-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
+
+.head-title h2 {
+  font-size: 1.1rem;
+}
+
+.head-title span {
+  font-size: 0.8rem;
+}
+
 .banner {
   width: 200%;
   height: 100vh;
   /* background: radial-gradient(at top left, #360a0a 50%, #ff0000 70%); */
   /* background-color: red; */
   background: rgb(34, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(34, 0, 0, 1) 10%,
-    rgba(154, 0, 0, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(34, 0, 0, 1) 10%,
+      rgba(154, 0, 0, 1) 100%);
   border-bottom-left-radius: 500%;
   border-bottom-right-radius: 500%;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.wrapper img {
+  width: 100%;
 }
