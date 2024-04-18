@@ -1,7 +1,8 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanwebregularfanum.eot");
-  src: url("../fonts/iranyekanwebregularfanum.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/iranyekanwebregularfanum.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/iranyekanwebregularfanum.woff") format("woff"),
     url("../fonts/iranyekanwebregularfanum.woff2") format("woff2"),
     url("../fonts/iranyekanwebregularfanum.ttf") format("truetype");
@@ -11,7 +12,8 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanweblightfanum.eot");
-  src: url("../fonts/iranyekanweblightfanum.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/iranyekanweblightfanum.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/iranyekanweblightfanum.woff") format("woff"),
     url("../fonts/iranyekanweblightfanum.woff2") format("woff2"),
     url("../fonts/iranyekanweblightfanum.ttf") format("truetype");
@@ -21,7 +23,8 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanwebboldfanum.eot");
-  src: url("../fonts/iranyekanwebboldfanum.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/iranyekanwebboldfanum.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/iranyekanwebboldfanum.woff") format("woff"),
     url("../fonts/iranyekanwebboldfanum.woff2") format("woff2"),
     url("../fonts/iranyekanwebboldfanum.ttf") format("truetype");
@@ -31,7 +34,8 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanwebextraboldfanum.eot");
-  src: url("../fonts/iranyekanwebextraboldfanum.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/iranyekanwebextraboldfanum.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/iranyekanwebextraboldfanum.woff") format("woff"),
     url("../fonts/iranyekanwebextraboldfanum.woff2") format("woff2"),
     url("../fonts/iranyekanwebextraboldfanum.ttf") format("truetype");
@@ -41,7 +45,8 @@
 @font-face {
   font-family: "yekan";
   src: url("../fonts/iranyekanwebextrablackfanum.eot");
-  src: url("../fonts/iranyekanwebextrablackfanum.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/iranyekanwebextrablackfanum.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/iranyekanwebextrablackfanum.woff") format("woff"),
     url("../fonts/iranyekanwebextrablackfanum.woff2") format("woff2"),
     url("../fonts/iranyekanwebextrablackfanum.ttf") format("truetype");
@@ -51,7 +56,8 @@
 @font-face {
   font-family: "Freight";
   src: url("../fonts/FreightSansProBold-Regular.eot");
-  src: url("../fonts/FreightSansProBold-Regular.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/FreightSansProBold-Regular.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/FreightSansProBold-Regular.woff") format("woff"),
     url("../fonts/FreightSansProBold-Regular.woff2") format("woff2"),
     url("../fonts/FreightSansProBold-Regular.ttf") format("truetype");
@@ -156,14 +162,19 @@ header {
   /* background: radial-gradient(at top left, #360a0a 50%, #ff0000 70%); */
   /* background-color: red; */
   background: rgb(34, 0, 0);
-  background: linear-gradient(90deg,
-      rgba(34, 0, 0, 1) 10%,
-      rgba(154, 0, 0, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 0, 0, 1) 10%,
+    rgba(154, 0, 0, 1) 100%
+  );
   border-bottom-left-radius: 500%;
   border-bottom-right-radius: 500%;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -173,4 +184,41 @@ header {
 
 .wrapper img {
   width: 100%;
+}
+.banner-inside {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.banner-inside h1 {
+  font-size: 4.5rem;
+  color: white;
+}
+.banner-inside h4 {
+  font-size: 1.2rem;
+  color: white;
+}
+.banner-inside button {
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-family: "yekan";
+  cursor: pointer;
+}
+.demo-pageContainer-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demo-pageContainer {
+  /* margin-top: 100vh; */
+  position: relative;
+  top: 100vh;
 }
