@@ -118,13 +118,15 @@ header {
 
 .head-contactUs {
   background: #dc0001;
-  color: white;
+  color: #ffffff;
   padding: 0.4rem 1.6rem;
   border-radius: 0.5rem;
   cursor: pointer;
   box-shadow: rgb(0 0 0 / 40%) 0px 2px 11px -2px;
   font-size: 0.8rem;
   font-weight: bold;
+  border: none;
+  font-family: 'yekan';
 }
 
 .head-container {
@@ -144,10 +146,6 @@ header {
 
 .head-title h2 {
   font-size: 1.1rem;
-}
-
-.head-title span {
-  font-size: 0.8rem;
 }
 
 .banner {
@@ -173,4 +171,32 @@ header {
 
 .wrapper img {
   width: 100%;
+}
+
+.current-theme-text {
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.current-theme-text::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(219, 0, 0);
+  animation: lamp-animation 1.8s infinite ease-in-out;
+  position: absolute;
+  right: -13px;
+  top: 32%;
+}
+
+@keyframes lamp-animation {
+  0%, 100%{
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50%{
+    transform: scale(1.4);
+    opacity: 1;
+  }
 }
