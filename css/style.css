@@ -132,7 +132,7 @@ header {
   font-size: 0.8rem;
   font-weight: bold;
   border: none;
-  font-family: 'yekan';
+  font-family: "yekan";
 }
 
 .head-container {
@@ -190,7 +190,7 @@ header {
 }
 
 .current-theme-text::before {
-  content: '';
+  content: "";
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -202,11 +202,12 @@ header {
 }
 
 @keyframes lamp-animation {
-  0%, 100%{
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.5;
   }
-  50%{
+  50% {
     transform: scale(1.4);
     opacity: 1;
   }
@@ -243,8 +244,44 @@ header {
   justify-content: center;
   align-items: center;
 }
+.demo-pageContainer-title h3 {
+  font-size: 1.5rem;
+}
 .demo-pageContainer {
   /* margin-top: 100vh; */
   position: relative;
   top: 100vh;
+}
+.demo-pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+.demo-pageContainer-cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  gap: 2rem;
+}
+.demo-pageContainer-card {
+  /* height: 300px; */
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.demo-pageContainer-card p {
+  font-weight: 200;
+}
+.demo-pageContainer-card img {
+  box-shadow: rgb(0 0 0 / 13%) 0px 2px 14px 0px;
+  width: 100%;
+  border-radius: 0.5rem;
 }
